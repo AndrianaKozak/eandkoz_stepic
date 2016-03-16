@@ -1,7 +1,7 @@
 
 def application (environ, start_response):
     status = "200 OK"
-    headers = [('content-Type', 'text/plain')]
+    headers = [('Content-Type', 'text/plain')]
     start_response(status, headers)
     data = environ['QUERY_STRING'].replace('&','\n')
     print(data)
