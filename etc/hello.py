@@ -1,4 +1,4 @@
-bind='0.0.0.0:8080'
+bind='0.0.0.0:8000'
 accesslog='/home/box/web/gunicorn_access.log'
 errorlog='/home/box/web/gunicorn_error.log'
 pythonpath='/usr/bin/python2.7'
