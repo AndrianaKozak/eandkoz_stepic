@@ -6,6 +6,9 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 MANAGERS = ADMINS
 
