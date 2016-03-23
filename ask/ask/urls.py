@@ -4,14 +4,9 @@ from django.conf.urls.defaults import patterns, include, url
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('qa.views',
-    url(r'^$', 'index', name='index'),
-    url(r'^login/','login', name='login'),
-    url(r'^signup/', 'signup', name='signup'),
-    url(r'^question/(\d+)/', 'question', name='question'),
-    url(r'^ask/', 'ask', name='ask'),
-    url(r'^popular/', 'popular', name='popular'),
-    url(r'^new/', 'new', name='new'),
+urlpatterns = patterns('',
+    url(r'^admin/',include(admin.site.urls)),
+    url(r'^', include("qa.urls")),
     # Examples:
     # url(r'^$', 'ask.views.home', name='home'),
     # url(r'^ask/', include('ask.foo.urls')),
